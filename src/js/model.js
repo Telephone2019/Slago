@@ -2,7 +2,7 @@
 (function(){
     window.SlagoModel={};
     let IMPORT=function(src){
-        document.write('<script type="text/javascript" src="'+src+'"></script>');
+        document.write('<script  type="text/javascript" src="'+src+'"></script>');
     };
     //操作库
     IMPORT("./js/Slagolib.js");
