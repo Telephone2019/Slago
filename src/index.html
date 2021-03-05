@@ -12,11 +12,17 @@
             padding: 0px;
             border: 0px;
         }
+        body{
+            background-color: rgba(240, 248, 255, 0);
+            width:100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 
-<body style="background-color: rgba(240, 248, 255, 0);width:100%;display: flex;justify-content: center;flex-wrap: wrap;"
-    id="Slago.UI">
+<body id="Slago.UI">
     <div style="width:640px;">
         <!-- Slago.Header -->
         <div style="width:640px;height:75px;background-color: rgb(255, 255, 255);position: fixed;" id="Slago.Header">
@@ -46,11 +52,44 @@
     </div>
 </body>
 <script type="text/javascript" src="./js/Slago.js"></script>
+<script type="text/javascript" src="./js/Open.js"></script>
 <script type="text/javascript">
-    Slago.Init();
     Slago.CreatePage("<div><h1>HELLO<h1><div>");
     Slago.CreatePage("<div><h1>gao<h1><div>");
     Slago.CreatePage("<div><h1>wan<h1><div>");
+    let template=`
+    <div>
+        <ul>
+        {{#hello}}
+            {{^java}}
+                {{#show}}
+                    <img src="{{.}}" style="width:200%;">
+                {{/show}}
+            {{/java}}
+        {{/hello}}
+        </ul>
+    </div>
+    `;
+    let data={
+        hello:[
+            {java:true,show:[
+                "http://119.3.180.71/DataBase/123/img/55.jpg",
+                "http://119.3.180.71/DataBase/123/img/57.png"
+            ]},
+            {java:true,show:[
+                "http://119.3.180.71/DataBase/123/img/57.png",
+                "http://119.3.180.71/DataBase/123/img/57.png"
+            ]},
+            {java:true,show:[
+                "http://119.3.180.71/DataBase/123/img/57.png",
+                "http://119.3.180.71/DataBase/123/img/57.png"
+            ]},
+        ]
+    };
+    Slago.CreatePage(Open.template.engin(template,data));
+    Slago.Header.none();
+    Slago.Footer.none();
+    console.log(Open.template.engin(template,data));
 </script>
 
 </html>

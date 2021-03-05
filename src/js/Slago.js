@@ -138,3 +138,4 @@ window.Slago = {
         }
     }
 };
+window.Slago.Init();
