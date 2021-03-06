@@ -59,5 +59,9 @@
     document.getElementById("Slago.FindPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
     //渲染瀑布流
     document.getElementById("Slago.AboutPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
+    //点击帖子中图片发生事件
+    function IMageClick(){
+        Slago.CreatePage(SlagoModel.PostSuspensionPage.postPage.getModel());
+    }
 </script>
 </html>

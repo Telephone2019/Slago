@@ -3,6 +3,9 @@ window.Slago = {
     PageStack: {
         stack: [],
         push: function (div) {
+            //栈为空，则将Header与Footer不显示
+            window.Slago.Header.none();
+            window.Slago.Footer.none();
             //将上一个页面进行display:none
             if (this.stack.length > 0) {
                 this.stack[this.stack.length-1].scroll=parseInt(window.pageYOffset);//scroll更新
@@ -49,6 +52,9 @@ window.Slago = {
             document.getElementById("Slago.Containner").style.display="none";
             //TO lastPage
             window.Slago.ThreeIndexPage.To(window.Slago.ThreeIndexPage.lastPage);
+            //显示Header与Footer
+            window.Slago.Header.block();
+            window.Slago.Footer.block();
         }
     }, //End-PageStack
     //向页面栈创建新页面

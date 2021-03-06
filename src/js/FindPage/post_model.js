@@ -31,7 +31,7 @@
    '                <!--图片容器-->',
    '                {{#ImageList}}',
    '                    <div style="width:200px;height:200px;overflow: hidden;display: flex;align-items: center;border-radius: 10px;">',
-   '                        <img src="{{.}}" style="width:100%;border-radius:10px;" onclick="Slago.CreatePage(SlagoModel.PostSuspensionPage.postPage.getModel())" >',
+   '                        <img src="{{.}}" style="width:100%;border-radius:10px;" onclick="IMageClick()" >',
    '                    </div>',
    '                {{/ImageList}}',
    '            </div>',
