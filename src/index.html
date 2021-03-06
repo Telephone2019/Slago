@@ -25,7 +25,7 @@
 <body id="Slago.UI">
     <div style="width:640px;">
         <!-- Slago.Header -->
-        <div style="width:640px;height:75px;background-color: rgb(255, 255, 255);position: fixed;border-bottom: 1px solid rgb(218, 218, 218);" id="Slago.Header">
+        <div style="width:640px;height:76px;background-color: rgb(255, 255, 255);position: fixed;border-bottom: 1px solid rgb(218, 218, 218);" id="Slago.Header">
             <img src="http://119.3.180.71/temp/logo_imageshare.png" style="height:69px;margin-top: 2px;">
         </div>
         <div style="width:100%;height:75px;background-color: rgba(240, 248, 255, 0);" id="Slago.HeaderBlankSpace"></div>
@@ -33,11 +33,11 @@
         <div style="width:640px;display:none;background-color: rgba(240, 248, 255, 0);"
             id="Slago.Containner"></div>
         <!-- Slago.AboutPage -->
-        <div style="width:640px;display: none;background-color: aqua;" id="Slago.AboutPage"></div>
+        <div style="width:640px;display: none;background-color: rgb(255, 255, 255);" id="Slago.AboutPage"></div>
         <!-- Slago.FindPage -->
         <div style="width:640px;display: block;background-color: rgb(255, 255, 255);" id="Slago.FindPage"></div>
         <!-- Slago.UserPage -->
-        <div style="width:640px;display: none;background-color: brown;" id="Slago.UserPage"></div>
+        <div style="width:640px;height:300px;display: none;background-color: rgb(255, 133, 133);" id="Slago.UserPage"></div>
         <!-- Slago.Footer -->
         <div style="width:100%;height:120px;background-color: rgba(240, 248, 255, 0);" id="Slago.FooterBlankSpace"></div>
         <div style="width:640px;height:110px;background-color: rgb(255, 255, 255);
@@ -54,4 +54,10 @@
 </body>
 <!-- 模块管理 -->
 <script type="text/javascript" src="./js/model.js"></script>
+<script type="text/javascript">
+    //渲染瀑布流
+    document.getElementById("Slago.FindPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
+    //渲染瀑布流
+    document.getElementById("Slago.AboutPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
+</script>
 </html>
