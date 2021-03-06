@@ -11,4 +11,7 @@
     //主页
     SlagoModel.FindPage={};
     IMPORT("./js/FindPage/post_model.js");
+    //帖子悬浮页面-帖子悬浮层模块
+    SlagoModel.PostSuspensionPage={};
+    IMPORT("./js/PostSuspensionPage/postPage.js");
 })();
