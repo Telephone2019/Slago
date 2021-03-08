@@ -53,7 +53,7 @@
     '</div>',
     ].join("");
     namespace.getModel=function(){
-        console.log(Slagolib.template.engin(this.Page,{}));
+        //console.log(Slagolib.template.engin(this.Page,{}));
         return Slagolib.template.engin(this.Page,{});
     }
     //加入模块

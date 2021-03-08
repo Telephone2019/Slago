@@ -84,7 +84,7 @@
         ]
     };
     namespace.getModel=function(){
-       console.log(Slagolib.template.engin(this.mediaStream,this.data));
+       //console.log(Slagolib.template.engin(this.mediaStream,this.data));
        return Slagolib.template.engin(this.mediaStream,this.data)+Slagolib.template.engin(this.mediaStream,this.data);
     };
     //加入模块
