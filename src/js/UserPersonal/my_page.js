@@ -72,7 +72,7 @@
     '            <!-- Post颜色条 -->',
     '            <div style="width:100px;',
     '                        height:100%;',
-    '                        background-image: linear-gradient(to right, rgb(255, 92, 92) , rgb(255, 255, 255));',
+    '                        background-image: linear-gradient(to right, rgb(0, 122, 255) , rgb(255, 255, 255));',
     '                        border-radius:5px;',
     '                        margin-left:25px;">',
     '            </div>',
