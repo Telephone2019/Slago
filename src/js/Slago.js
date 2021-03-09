@@ -101,21 +101,21 @@ window.Slago = {
         let FooterIcons=document.getElementsByClassName("Slago.FooterIcon");
         FooterIcons[0].onclick=function(){
             window.Slago.ThreeIndexPage.To("AboutPage");
-            document.getElementsByClassName("Slago.FooterIcon")[0].src="http://119.3.180.71/app/img/about_blue.png";
-            document.getElementsByClassName("Slago.FooterIcon")[1].src="http://119.3.180.71/app/img/find_gray.png";
-            document.getElementsByClassName("Slago.FooterIcon")[2].src="http://119.3.180.71/app/img/home_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[0].src="./img/about_blue.png";
+            document.getElementsByClassName("Slago.FooterIcon")[1].src="./img/find_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[2].src="./img/home_gray.png";
         };
         FooterIcons[1].onclick=function(){
             window.Slago.ThreeIndexPage.To("FindPage");
-            document.getElementsByClassName("Slago.FooterIcon")[0].src="http://119.3.180.71/app/img/about_gray.png";
-            document.getElementsByClassName("Slago.FooterIcon")[1].src="http://119.3.180.71/app/img/find_blue.png";
-            document.getElementsByClassName("Slago.FooterIcon")[2].src="http://119.3.180.71/app/img/home_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[0].src="./img/about_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[1].src="./img/find_blue.png";
+            document.getElementsByClassName("Slago.FooterIcon")[2].src="./img/home_gray.png";
         };
         FooterIcons[2].onclick=function(){
             window.Slago.ThreeIndexPage.To("UserPage");
-            document.getElementsByClassName("Slago.FooterIcon")[0].src="http://119.3.180.71/app/img/about_gray.png";
-            document.getElementsByClassName("Slago.FooterIcon")[1].src="http://119.3.180.71/app/img/find_gray.png";
-            document.getElementsByClassName("Slago.FooterIcon")[2].src="http://119.3.180.71/app/img/home_blue.png";
+            document.getElementsByClassName("Slago.FooterIcon")[0].src="./img/about_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[1].src="./img/find_gray.png";
+            document.getElementsByClassName("Slago.FooterIcon")[2].src="./img/home_blue.png";
         };
     },
 
