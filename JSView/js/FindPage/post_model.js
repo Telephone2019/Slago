@@ -60,10 +60,10 @@
     ].join("");
     namespace.data={
         UserHeadPic:"https://weiliicimg9.pstatp.com/weili/l/907007723288002647.webp",
-        likePic:"http://119.3.180.71/app/img/heart_gray.png",
-        messagePic:"http://119.3.180.71/app/img/%E6%B6%88%20%E6%81%AF.png",
-        threedotPic:"http://119.3.180.71/app/img/%E4%B8%89%E4%B8%AA%E7%82%B9.png",
-        starPic:"http://119.3.180.71/app/img/%E6%94%B6%20%E8%97%8F.png",
+        likePic:"./img/heart_gray.png",
+        messagePic:"./img/%E6%B6%88%20%E6%81%AF.png",
+        threedotPic:"./img/%E4%B8%89%E4%B8%AA%E7%82%B9.png",
+        starPic:"./img/%E6%94%B6%20%E8%97%8F.png",
         Username:"高万禄",
         aboutlike:"关注",
         Image:[
