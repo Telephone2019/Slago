@@ -17,7 +17,6 @@
     //用户个人页模块
     SlagoModel.UserPersonal={};
         IMPORT("./js/UserPersonal/PersonalPageOptionsComponent.js");//选项组件
-        IMPORT("./js/UserPersonal/my_page.js");//个人页主题
-
-
+        IMPORT("./js/UserPersonal/my_page.js");//个人主页
+        IMPORT("./js/UserPersonal/ProfileSettingsComponent.js");//资料设置
 })();

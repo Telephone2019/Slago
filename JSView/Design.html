@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=640,user-scalable=no">
     <title>Document</title>
     <style>
-        *{
-            margin:0px;
+        * {
+            margin: 0px;
             border: 0px;
             padding: 0px;
         }
     </style>
 </head>
+
 <body style="background-color: rgb(255, 155, 155);">
- 
+    <!-- 个人信息页组件 -->
+    <div style="width:640px;background-color: #ffffff;height:500px;">
+        <!-- 导航栏 -->
+        <div
+            style="width:640px;height:80px;background-color: rgb(255, 255, 255);align-items: center;display: flex;position: fixed;top:0px;border-bottom: 1px solid rgb(240, 240, 240);">
+            <!-- 返回按键 -->
+            <div onclick="Slago.PageStack.pop()"
+                style="display: flex;height:100%;align-items: center;margin-left: 10px;">
+                <img src="./img/页面栈返回左箭头.png" style="height:40px;width:40px;">
+                <div style="height:100%;display: flex;align-items: center;margin-left: 3px;">
+                    <span style="font-size: 27px;color:#0066cc;">返回</span>
+                </div>
+            </div>
+        </div>
+        <div style="height:80px;"></div>
+    </div>
 </body>
+
 </html>
