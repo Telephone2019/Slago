@@ -61,9 +61,9 @@
     namespace.data={
         UserHeadPic:"https://weiliicimg9.pstatp.com/weili/l/907007723288002647.webp",
         likePic:"./img/heart_gray.png",
-        messagePic:"./img/%E6%B6%88%20%E6%81%AF.png",
-        threedotPic:"./img/%E4%B8%89%E4%B8%AA%E7%82%B9.png",
-        starPic:"./img/%E6%94%B6%20%E8%97%8F.png",
+        messagePic:"./img/消 息.png",
+        threedotPic:"./img/三个点.png",
+        starPic:"./img/收 藏.png",
         Username:"高万禄",
         aboutlike:"关注",
         Image:[
