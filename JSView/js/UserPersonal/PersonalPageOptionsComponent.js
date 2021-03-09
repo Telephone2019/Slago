@@ -7,7 +7,7 @@
         '<div style="width:640px;height:500px;background-color: rgb(255, 255, 255);">',
         '    <!-- 个人资料设置 -->',
         '    <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 30px;display: flex;',
-        '    border-top: 1px solid #dfdfdf;border-bottom:2px solid #dfdfdf ;">',
+        '    border-bottom:1px solid #dfdfdf ;">',
         '        <!-- icon -->',
         '        <div style="width:120px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;">',
         '            <img src="./img/展示信息设置.png" style="height:50%;margin-left: 30px;">',

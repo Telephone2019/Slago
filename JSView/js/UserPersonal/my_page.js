@@ -10,7 +10,7 @@
     '                height:200px;margin-left: 10px;',
     '                display: flex;flex-wrap: wrap;justify-content: space-around;',
     '                align-items: center;margin-top: 30px;',
-    '                border-top:1px solid #dfdfdf;">',
+    '                ">',
     '        <!-- 头像 -->',
     '        <div style="width:140px;height:140px;',
     '                    background-color:rgb(255, 255, 255);',
