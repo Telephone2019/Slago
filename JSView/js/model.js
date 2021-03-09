@@ -16,6 +16,8 @@
         IMPORT("./js/PostSuspensionPage/postPage.js");//帖子观看层
     //用户个人页模块
     SlagoModel.UserPersonal={};
-        IMPORT("./js/UserPersonal/my_page.js");//
+        IMPORT("./js/UserPersonal/PersonalPageOptionsComponent.js");//选项组件
+        IMPORT("./js/UserPersonal/my_page.js");//个人页主题
+
 
 })();
