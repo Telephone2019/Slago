@@ -24,4 +24,8 @@
         IMPORT("./js/UserPersonal/PersonalPostPage.js");//个人帖子页面
         IMPORT("./js/UserPersonal/PersonalAchievementPage.js");//个人成就页面
         IMPORT("./js/UserPersonal/MorePage.js");//更多详情页面
+    //关注页面
+    SlagoModel.AboutPage={};
+        IMPORT("./js/AboutPage/Header.js");//导入导航栏
+        IMPORT("./js/AboutPage/aboutPage.js");//关注页
 })();
