@@ -4,7 +4,7 @@
     //发现页
     namespace.template=[
     '<!--页面Header-->',
-    '<div style="width:640px;height:150px;position:fixed;background-color:#ffffff;border-bottom:1px #0066CC solid;">',
+    '<div style="width:640px;height:150px;position:fixed;background-color:#ffffff;border-bottom:1px rgb(77, 160, 255) solid;">',
     '    <div style="width:640px;height:14px;background-color:#ffffff;"></div>',
     '    <!-- 标题与搜索栏 -->',
     '    <div style="width:640px;height:50%;display: flex;flex-wrap: wrap;">',

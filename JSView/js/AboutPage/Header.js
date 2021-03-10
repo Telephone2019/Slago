@@ -4,7 +4,7 @@
     //发现页
     namespace.template=[
     '<!--页面Header-->',
-    '<div style="width:640px;height:150px;position:fixed;background-color:#ffffff;border-bottom:1px #0066CC solid;">',
+    '<div style="width:640px;height:150px;position:fixed;background-color:#ffffff;border-bottom:1px rgb(77, 160, 255) solid;">',
     '    <div style="width:640px;height:14px;background-color:#ffffff;"></div>',
     '    <!-- 标题与搜索栏 -->',
     '    <div style="width:640px;height:50%;display: flex;flex-wrap: wrap;">',
@@ -13,7 +13,7 @@
     '                    align-items: center;color:#11121b;">关注</div>',
     '        <!-- 帖子上传栏 -->',
     '        <div style="width:500px;height:100%;background-color: #ffffff;display: flex;align-items: center;flex-wrap: wrap;">',
-    '           <img src="./img/312.png" style="height:50px;margin-left: 410px;" class="hoverPointer">',
+    '           <img src="./img/312.png" style="height:40px;margin-left: 415px;" class="hoverPointer">',
     '        </div>',
     '    </div>',
     '    <!-- 页面内选择栏 -->',
