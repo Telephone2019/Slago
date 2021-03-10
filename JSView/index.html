@@ -6,30 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=640,user-scalable=no">
     <title>Slago开发</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-        }
-        body{
-            background-color: rgba(240, 248, 255, 0);
-            width:100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
 </head>
 
 <body id="Slago.UI">
     <div style="width:640px;">
-        <!-- Slago.Header -->
-        <div style="width:640px;height:76px;background-color: rgb(255, 255, 255);
-        position: fixed;border-bottom: 1px solid #e7e7e7;" id="Slago.Header">
-            <img src="./img/310.png" style="height:69px;margin-top: 2px;margin-left: 25px;">
-        </div>
-        <div style="width:100%;height:75px;background-color: rgba(240, 248, 255, 0);" id="Slago.HeaderBlankSpace"></div>
         <!-- Slago.Containner -->
         <div style="width:640px;display:none;background-color: rgba(240, 248, 255, 0);"
             id="Slago.Containner"></div>
@@ -45,11 +26,11 @@
         position: fixed;bottom: 0px;z-index: 1000;display: flex;align-items: center;justify-content: space-around;border-top: 1px solid rgb(218, 218, 218);"
             id="Slago.Footer">
             <img src="./img/about_gray.png" style="height:70px;width:70px;"
-                class="Slago.FooterIcon">
+                class="Slago.FooterIcon hoverPointer">
             <img src="./img/find_blue.png" style="height:70px;width:70px;"
-                class="Slago.FooterIcon">
+                class="Slago.FooterIcon hoverPointer">
             <img src="./img/home_gray.png" style="height:70px;width:70px;"
-                class="Slago.FooterIcon">
+                class="Slago.FooterIcon hoverPointer">
         </div>
     </div>
 </body>
@@ -57,7 +38,7 @@
 <script type="text/javascript" src="./js/model.js?random=1232"></script>
 <script type="text/javascript">
     //渲染瀑布流
-    document.getElementById("Slago.FindPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
+    document.getElementById("Slago.FindPage").innerHTML=SlagoModel.FindPage.findPage.getModel();
     //渲染瀑布流
     document.getElementById("Slago.AboutPage").innerHTML=SlagoModel.FindPage.post_model.getModel();
     //渲染个人主页

@@ -3,8 +3,7 @@ window.Slago = {
     PageStack: {
         stack: [],
         push: function (div) {
-            //栈为空，则将Header与Footer不显示
-            window.Slago.Header.none();
+            //栈为空，则将Footer不显示
             window.Slago.Footer.none();
             //将上一个页面进行display:none
             if (this.stack.length > 0) {
@@ -52,8 +51,7 @@ window.Slago = {
             document.getElementById("Slago.Containner").style.display="none";
             //TO lastPage
             window.Slago.ThreeIndexPage.To(window.Slago.ThreeIndexPage.lastPage);
-            //显示Header与Footer
-            window.Slago.Header.block();
+            //显示Footer
             window.Slago.Footer.block();
         }
     }, //End-PageStack
@@ -131,18 +129,6 @@ window.Slago = {
             document.getElementById("Slago.FooterBlankSpace").style.display="block";
         }
     },
-
-    //header显示设置
-    Header:{
-        none:function(){
-            document.getElementById("Slago.Header").style.display="none";
-            document.getElementById("Slago.HeaderBlankSpace").style.display="none";
-        },
-        block:function(){
-            document.getElementById("Slago.Header").style.display="block";
-            document.getElementById("Slago.HeaderBlankSpace").style.display="block";
-        }
-    }
 };
 //初始化
 window.Slago.Init();

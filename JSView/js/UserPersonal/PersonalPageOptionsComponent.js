@@ -6,7 +6,7 @@
         '<!-- 用户主页选项栏 -->',
         '<div style="width:640px;height:500px;background-color: rgb(255, 255, 255);">',
         '    <!-- 个人资料设置 -->',
-        '    <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 30px;display: flex;',
+        '    <div class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;margin-top: 30px;display: flex;',
         '    border-bottom:1px solid #dfdfdf ;" onclick="SlagoModel.UserPersonal.ProfileSettingsComponent.show()">',//点击显示资料设置页面
         '        <!-- icon -->',
         '        <div style="width:120px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;">',
@@ -25,7 +25,7 @@
         '        </div>',
         '    </div>',
         '    <!-- 帖子 -->',
-        '    <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 30px;display: flex;',
+        '    <div class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;margin-top: 30px;display: flex;',
         '    border-top: 1px solid #dfdfdf;border-bottom:1px solid #dfdfdf ;" onclick="SlagoModel.UserPersonal.PersonalPostPage.show()">',//点击显示帖子页面
         '        <!-- icon -->',
         '        <div style="width:120px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;">',
@@ -44,7 +44,7 @@
         '        </div>',
         '    </div>',
         '    <!-- 成就 -->',
-        '    <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 10px;display: flex;',
+        '    <div class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;margin-top: 10px;display: flex;',
         '    border-bottom:1px solid #dfdfdf ;" onclick="SlagoModel.UserPersonal.PersonalAchievementPage.show()">',//点击显示个人成就页面
         '        <!-- icon -->',
         '        <div style="width:120px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;">',
@@ -63,7 +63,7 @@
         '        </div>',
         '    </div>',
         '    <!-- 更多 -->',
-        '    <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 10px;display: flex;" onclick="SlagoModel.UserPersonal.MorePage.show()">',//点击显示更多页面
+        '    <div class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;margin-top: 10px;display: flex;" onclick="SlagoModel.UserPersonal.MorePage.show()">',//点击显示更多页面
         '        <!-- icon -->',
         '        <div style="width:120px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;">',
         '            <img src="./img/ts-star-2.png" style="height:45%;margin-left: 33px;">',

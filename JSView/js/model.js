@@ -10,7 +10,9 @@
         IMPORT("./js/Slago.js");//UI基本解决方案
     //主页
     SlagoModel.FindPage={};
+        IMPORT("./js/FindPage/Header.js");//Header
         IMPORT("./js/FindPage/post_model.js");//主页帖子流组件
+        IMPORT("./js/FindPage/findPage.js");//发现页
     //帖子悬浮页面-帖子悬浮层模块
     SlagoModel.PostSuspensionPage={};
         IMPORT("./js/PostSuspensionPage/postPage.js");//帖子观看层
