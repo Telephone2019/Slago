@@ -3,11 +3,16 @@ window.Slago = {
     PageStack: {
         stack: [],
         push: function (div) {
+            //如果Stack为空则更新scroll
+            if(this.stack.length==0){
+                console.log("<<"+parseInt(window.pageYOffset).toString());
+                window.Slago.ThreeIndexPage[window.Slago.ThreeIndexPage.lastPage].scroll=parseInt(window.pageYOffset);
+            }
             //栈为空，则将Footer不显示
             window.Slago.Footer.none();
             //将上一个页面进行display:none
             if (this.stack.length > 0) {
-                this.stack[this.stack.length - 1].scroll = parseInt(window.pageYOffset); //scroll更新
+                this.stack[this.stack.length - 1].scroll = parseInt(window.pageYOffset); //更新浮层顶页scroll
                 this.stack[this.stack.length - 1].dom.style.display = "none";
             }
             //入栈
@@ -37,6 +42,7 @@ window.Slago = {
             }
         },
         clear: function () {
+            //将containner全部页面删除
             while (window.Slago.PageStack.stack.length > 0) {
                 window.Slago.PageStack.pop();
             }
@@ -83,17 +89,16 @@ window.Slago = {
             if (Index != "Containner") {
                 this[Index].dom.style.display = "block";
                 this.lastPage = Index;
+                //更新页面滑动位置
+                window.scrollTo(0, this[this.lastPage].scroll);
                 //注意:此处设计To 与 window.Slago.PageStack.clear的递归
                 if (window.Slago.PageStack.stack.length > 0) {
                     window.Slago.PageStack.clear();
                 }
             }
-            //更新页面滑动位置
-            window.scrollTo(0, this[this.lastPage].scroll);
         },
         $closePage: function () { //关闭现在页面并更新scroll等信息
             //更新scroll
-            this[this.lastPage].scroll = parseInt(window.pageYOffset);
             this[this.lastPage].dom.style.display = "none";
         }
     }, //End-ThreeIndexPage
@@ -138,7 +143,7 @@ window.Slago = {
 
     //页面切换动画
     PageSwitchAnimation: {
-        //线性向右切动画
+        //线性向右切动画，直接操纵Slago.PageStack
         linearRight: function () {
             let PageStack=Slago.PageStack;
             let nowLeft = parseInt(PageStack.stack[PageStack.stack.length - 1].dom.style.marginLeft);
@@ -150,12 +155,15 @@ window.Slago = {
                 if (PageStack.stack.length > 0) {
                     PageStack.stack[PageStack.stack.length - 1].dom.style.display = "block";
                     window.scrollTo(0, PageStack.stack[PageStack.stack.length - 1].scroll);
+                    if(PageStack.stack.length==0){//栈为空
+                        PageStack.clear();
+                    }
                 } else { //弹栈后栈为空，则关闭Containner显示其他页面
                     PageStack.clear();
                 }
             } else {
-                nowLeft+=20;
-                console.log(nowLeft);
+                nowLeft+=40;
+                //console.log(nowLeft);
                 PageStack.stack[PageStack.stack.length - 1].dom.style.marginLeft = nowLeft.toString() + "px";
                 //递归
                 setTimeout('Slago.PageSwitchAnimation.linearRight()',1);
@@ -163,6 +171,9 @@ window.Slago = {
 
         }
     },
+
+    //返回按键劫持
+    
 };
 //初始化
 window.Slago.Init();
