@@ -13,7 +13,7 @@
     '                    align-items: center;color:#11121b;">关注</div>',
     '        <!-- 帖子上传栏 -->',
     '        <div style="width:500px;height:100%;background-color: #ffffff;display: flex;align-items: center;flex-wrap: wrap;">',
-    '           <img src="./img/312.png" style="height:40px;margin-left: 415px;" class="hoverPointer">',
+    '           <img src="./img/312.png" style="height:40px;margin-left: 415px;" class="hoverPointer" onclick="SlagoModel.PostUpPage.postupPage.show();">',//点击显示帖子上传界面
     '        </div>',
     '    </div>',
     '    <!-- 页面内选择栏 -->',

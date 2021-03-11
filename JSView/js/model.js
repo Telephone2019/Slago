@@ -28,4 +28,7 @@
     SlagoModel.AboutPage={};
         IMPORT("./js/AboutPage/Header.js");//导入导航栏
         IMPORT("./js/AboutPage/aboutPage.js");//关注页
+    //帖子上传页面
+    SlagoModel.PostUpPage={};
+        IMPORT("./js/PostUpPage/postupPage.js");//上传页面
 })();
