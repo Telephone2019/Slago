@@ -126,6 +126,8 @@ window.Slago = {
             document.getElementsByClassName("Slago.FooterIcon")[1].src = "./img/find_gray.png";
             document.getElementsByClassName("Slago.FooterIcon")[2].src = "./img/home_blue.png";
         };
+        //劫持返回按键
+        window.Slago.HijackReturnButton();
     },
 
 
@@ -173,7 +175,13 @@ window.Slago = {
     },
 
     //返回按键劫持
-    
+    HijackReturnButton:function(){
+        window.history.pushState({title:"title",url:"#"},"title","#");
+        window.addEventListener("popstate",function(){
+            window.Slago.PageStack.pop();//返回上级
+            window.history.pushState({title:"title",url:"#"},"title","#");
+        },false);
+    }
 };
 //初始化
 window.Slago.Init();
