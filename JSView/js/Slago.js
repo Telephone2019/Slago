@@ -179,7 +179,10 @@ window.Slago = {
         window.history.pushState({title:"title",url:"#"},"title","#");
         window.addEventListener("popstate",function(){
             window.Slago.PageStack.pop();//返回上级
-            window.history.pushState({title:"title",url:"#"},"title","#");
+            //栈不为空
+            if(window.Slago.PageStack.stack.length!=0){
+                window.history.pushState({title:"title",url:"#"},"title","#");                
+            }//否则应该退出本站了
         },false);
     }
 };
