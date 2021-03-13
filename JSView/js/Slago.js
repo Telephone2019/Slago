@@ -168,7 +168,7 @@ window.Slago = {
                 //console.log(nowLeft);
                 PageStack.stack[PageStack.stack.length - 1].dom.style.marginLeft = nowLeft.toString() + "px";
                 //递归
-                setTimeout('Slago.PageSwitchAnimation.linearRight()',1);
+                setTimeout('Slago.PageSwitchAnimation.linearRight()',7);
             }
 
         }
