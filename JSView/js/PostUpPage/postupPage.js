@@ -24,7 +24,7 @@
     '        <!-- 文字区域栏 -->',
     '        <div style="width:640px;margin-top: 10px;">',
     '            <textarea style="width: 600px;height:200px;outline: none;resize: none;color:rgb(36, 36, 36);padding: 10px;',
-    '            background-color: #ffffff;font-size: 23px;margin-left: 10px;" placeholder="分享生活美好..."></textarea>',
+    '            background-color: #ffffff;font-size: 26px;margin-left: 10px;" placeholder="分享生活美好..."></textarea>',
     '        </div>',
     '        <!-- 图片添加与显示栏 -->',
     '        <div style="width:600px;margin-left: 20px;background-color: #ffffff;margin-top: 20px;">',

@@ -22,13 +22,15 @@ namespace.click=function(addDivNode){
                 height:img_node.naturalHeight
             };
             //决策
-            if(imgSize.width>=imgSize.height){
+            if(imgSize.width>=imgSize.height){//横长
                 img_node.style.height="100%";
                 img_node.style.width="auto";
-            }else{
+            }else{//竖长
                 img_node.style.width="100%";
                 img_node.style.height="auto";
             }
+
+
         }else if(input_file.value){
             img_node.src=input_file.value;
         }else{
@@ -79,6 +81,10 @@ namespace.ajax=function(formData){
     console.log("帖子内容ajax上传");
     console.log(formData);
     //获得浮层dom
+    //添加上传进行可视化
+
+    //成功上传，则返回上级
+    Slago.PageStack.pop();
 };
     //加入模块
     SlagoModel.PostUpPage.PostUpModel=namespace;
