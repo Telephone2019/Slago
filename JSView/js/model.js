@@ -31,4 +31,5 @@
     //帖子上传页面
     SlagoModel.PostUpPage={};
         IMPORT("./js/PostUpPage/postupPage.js");//上传页面
+        IMPORT("./js/PostUpPage/PostUpModel.js");//帖子上传处理
 })();

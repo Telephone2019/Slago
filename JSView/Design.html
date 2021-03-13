@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=640,user-scalable=no">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <style>
         * {
             margin: 0px;
@@ -44,43 +45,49 @@
             <!-- 第一行 -->
             <div style="height:220px;width:600px;background-color: rgb(255, 255, 255);display: flex;align-items: center;justify-content: space-around;">
                 <!-- 第一张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)" class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
                 <!-- 第二张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)"  class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
                 <!-- 第三张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)"  class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
             </div>
             <!-- 第二行 -->
             <div style="height:220px;width:600px;background-color: rgb(255, 255, 255);display: flex;align-items: center;justify-content: space-around;">
                 <!-- 第四张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)"  class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
                 <!-- 第五张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)"  class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
                 <!-- 第六张 -->
-                <div class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
-                display: flex;justify-content: center;align-items: center;">
+                <div onclick="SlagoModel.PostUpModel.click(this)"  class="hoverPointer" style="width:180px;height:180px;background-color: #fafafa;border-radius: 10px;
+                display: flex;justify-content: center;align-items: center;overflow: hidden;">
                     <img src="./img/67.png" style="width:60px;height:60px;">
+                    <input type="file" accept="image/*" style="display: none;">
                 </div>
             </div>
         </div>
         <!-- 提交按钮 -->
-        <div style="width:640px;height:100px;background-color: rgb(255, 255, 255);margin-top: 40px;display: flex;align-items: center;">
-            <div class="hoverPointer" style="width:120px;height:60px;background-color: #0066cc;
+        <div  style="width:640px;height:100px;background-color: rgb(255, 255, 255);margin-top: 40px;display: flex;align-items: center;">
+            <div onclick="SlagoModel.PostUpModel.dataPost(this)" class="hoverPointer" style="width:120px;height:60px;background-color: #0066cc;
             border-radius: 30px;margin-left: 455px;display: flex;
             justify-content: center;align-items: center;
             font-size: 24px;color:#ffffff;">
@@ -89,5 +96,5 @@
         </div>
     </div>
 </body>
-
+<script type="text/javascript" src="./Design.js"></script>
 </html>
