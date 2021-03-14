@@ -20,10 +20,11 @@
     SlagoModel.UserPersonal={};
         IMPORT("./js/UserPersonal/PersonalPageOptionsComponent.js");//选项组件
         IMPORT("./js/UserPersonal/my_page.js");//个人主页
-        IMPORT("./js/UserPersonal/ProfileSettingsComponent.js");//资料设置
         IMPORT("./js/UserPersonal/PersonalPostPage.js");//个人帖子页面
         IMPORT("./js/UserPersonal/PersonalAchievementPage.js");//个人成就页面
         IMPORT("./js/UserPersonal/MorePage.js");//更多详情页面
+        SlagoModel.UserPersonal.UserData={};//个人信息
+            IMPORT("./js/UserPersonal/UserData/userDataPage.js");//个人信息页
     //关注页面
     SlagoModel.AboutPage={};
         IMPORT("./js/AboutPage/Header.js");//导入导航栏
