@@ -46,6 +46,14 @@
     '                    </div>',
     '                </div>',
     '            <div style="width:610px;height:1px;background-color: #f0f0f0;margin-left: 30px;"></div>',
+    '            <!-- 保存按钮栏 -->',
+    '            <div style="width:640px;height:100px;background-color: #ffffff;margin-top: 40px;">',
+    '               <div class="hoverPointer" onclick="Slago.PageStack.pop()" style="width:120px;height:60px;border-radius:30px;',
+    '                            background-color: #0066cc;color: #ffffff;display: flex;',
+    '                            justify-content: center;align-items: center;font-size: 24px;margin-left: 505px;">',
+    '               保存',
+    '               </div>',
+    '            </div>',
     '    </div>',
     ].join("");
     namespace.getModel=function(){
