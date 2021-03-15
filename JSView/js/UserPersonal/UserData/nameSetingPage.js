@@ -25,7 +25,7 @@
     '        <div style="height:80px;width:100%;"></div>',
     '        <!-- 昵称设置栏 -->',
     '                <!-- 昵称栏 -->',
-    '                <div  style="width:640px;height:100px;background-color: #ffffff;display: flex;">',
+    '                <div onclick="SlagoModel.UserPersonal.UserData.nameSetingPage.inputClick(this)" class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;display: flex;">',
     '                    <!-- 字体提示栏 -->',
     '                    <div style="width:150px;height:100px;background-color: rgb(255, 255, 255);',
     '                    display: flex;align-items: center;font-size: 25px;margin-left: 30px;">',
@@ -56,6 +56,10 @@
     '            </div>',
     '    </div>',
     ].join("");
+    namespace.inputClick=function(dom){
+        let input=dom.children[1].children[0].children[0];
+        input.click();
+    }
     namespace.getModel=function(){
         return Slagolib.template.engin(this.Page,{});
     }

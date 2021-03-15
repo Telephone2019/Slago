@@ -6,7 +6,7 @@
    '<!--基本容器-->',
    '<div style="width:100%;background-color:rgb((202, 248, 204))">',
    '    <!--作者信息栏-->',
-   '    <div style="width:100%;height:80px;background-color:rgb(252,252, 252);display:flex;flex-wrap:wrap;">',
+   '    <div style="width:100%;height:80px;background-color:rgb(255,255, 255);display:flex;flex-wrap:wrap;">',
    '        <!--头像框-->',
    '        <div style=" width:70px;height:70px;background-color: rgb(255, 255, 255);margin-left: 15px;border-radius:40px;margin-top: 5px;">',
    '            <!--头像-->',
