@@ -25,6 +25,7 @@
         IMPORT("./js/UserPersonal/MorePage.js");//更多详情页面
         SlagoModel.UserPersonal.UserData={};//个人信息
             IMPORT("./js/UserPersonal/UserData/userDataPage.js");//个人信息页
+            IMPORT("./js/UserPersonal/UserData/nameSetingPage.js");//昵称设置页
     //关注页面
     SlagoModel.AboutPage={};
         IMPORT("./js/AboutPage/Header.js");//导入导航栏
