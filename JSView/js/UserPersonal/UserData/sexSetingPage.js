@@ -4,9 +4,9 @@
     //渲染页
     namespace.Page=[
     '    <!-- 性别设置界面 -->',
-    '    <div style="width:640px;height:500px;background-color: rgb(255, 255, 255);">',
+    '    <div style="width:640px;background-color: rgb(255, 255, 255);">',
     '        <!-- 单个资料信息设置页 -->',
-    '        <div style="width:640px;height:600px;background-color: #ffffff;">',
+    '        <div style="width:640px;background-color: #ffffff;">',
     '            <!-- 导航栏 -->',
     '            <div',
     '                style="width:640px;height:80px;background-color: rgb(255, 255, 255);align-items: center;display: flex;position: fixed;top:0px;border-bottom: 1px solid rgb(77, 160, 255);">',
