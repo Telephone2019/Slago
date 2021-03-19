@@ -4,7 +4,7 @@
     //渲染页
     namespace.Page=[
     '    <!-- 更多页面 -->',
-    '    <div style="width:640px;height:2000px;background-image: linear-gradient(#5e91ff, #ff6565);">',
+    '    <div style="width:640px;height:{{screenHeight}}px;background-image: linear-gradient(#0066cc, #ffffff);">',
     '    <!-- 导航栏 -->',
     '    <div',
     '        style="width:640px;height:80px;background-color: rgb(255, 255, 255);align-items: center;display: flex;position: fixed;top:0px;border-bottom: 1px solid rgb(77, 160, 255);">',
@@ -41,7 +41,7 @@
     '    </div>',
     ].join("");
     namespace.getModel=function(){
-        return Slagolib.template.engin(this.Page,{});
+        return Slagolib.template.engin(this.Page,{screenHeight:screen.availHeight});
     }
     namespace.show=function(){
         //创建页面,推入页面栈
