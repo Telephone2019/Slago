@@ -52,7 +52,7 @@ window.Slago = {
             window.Slago.ThreeIndexPage.To(window.Slago.ThreeIndexPage.lastPage);
             //显示Footer
             window.Slago.Footer.block();
-        }
+        },
     }, //End-PageStack
     //向页面栈创建新页面
     CreatePage: function (newnode) {
@@ -103,6 +103,44 @@ window.Slago = {
         }
     }, //End-ThreeIndexPage
 
+    //加载悬浮页
+    LoadPage:{
+        hover:function(){
+            this.move();
+            //直接推进containner，以fixed形式呈现
+            let template=""+
+            '<!-- 单个资料信息设置页 -->'+
+            '<div style="width:640px;height:100%;background-color: #ffffff00;display: flex;justify-content: center;align-items: center;">'+
+            '    <img src="./img/load.gif" style="width:250px;height:200px;display:block;">'+
+            '    <img src="./img/pineapple.png" style="width:100px;height:100px;display: none;">'+
+            '</div>';
+            //创建一个width:640 height：screen.height的div
+            let pageNode=document.createElement("div");
+            pageNode.style.width="640px";
+            pageNode.style.height=window.screen.availHeight.toString()+"px";
+            pageNode.style.backgroundColor="#ffffff00";
+            pageNode.style.position="fixed";
+            pageNode.style.top="0px";
+            pageNode.style.zIndex="9999";
+            pageNode.id="Slago.LoadHover";
+            pageNode.innerHTML=template;
+            //添加孩子节点
+            document.getElementById("Slago.UI").children[0].appendChild(pageNode);
+        },
+        move:function(){
+            let LoadNode=document.getElementById("Slago.LoadHover");
+            if(LoadNode){
+                LoadNode.parentNode.removeChild(LoadNode);
+            }
+        },
+        trans:function(){
+            let LoadNode=document.getElementById("Slago.LoadHover");
+            if(LoadNode){
+                LoadNode.children[0].children[0].style.display="none";
+                LoadNode.children[0].children[1].style.display="block";
+            }
+        }
+    },
 
     //框架初始化
     Init: function () {
@@ -170,7 +208,6 @@ window.Slago = {
                 //递归
                 setTimeout('Slago.PageSwitchAnimation.linearRight()',4);
             }
-
         }
     },
 
@@ -178,6 +215,8 @@ window.Slago = {
     HijackReturnButton:function(){
         window.history.pushState({title:"title",url:"#"},"title","#");
         window.addEventListener("popstate",function(){
+            //加载浮层消失
+            Slago.LoadPage.move();
             window.Slago.PageStack.pop();//返回上级
             //栈不为空
             if(window.Slago.PageStack.stack.length!=0){

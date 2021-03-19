@@ -43,7 +43,7 @@ namespace.click=function(addDivNode){
     }
     input_file.click();
 };
-//数据上传事件
+//数据上传事件,发布按钮点击事件
 namespace.dataPost=function(dom){
     dom=dom.parentNode;//dom为按钮的父节点
     let img_file_list=[];
@@ -76,15 +76,15 @@ namespace.dataPost=function(dom){
     formData.append("textarea",textarea_node.value);
     //调用上传属性
     this.ajax(formData);
+
 };
 namespace.ajax=function(formData){
     console.log("帖子内容ajax上传");
     console.log(formData);
     //获得浮层dom
     //添加上传进行可视化
-
-    //成功上传，则返回上级
-    Slago.PageStack.pop();
+    //显示加载浮层
+    Slago.LoadPage.hover();
 };
     //加入模块
     SlagoModel.PostUpPage.PostUpModel=namespace;
