@@ -81,7 +81,7 @@
     '        </div>',
     '        <div style="width:610px;height:1px;background-color: #f0f0f0;margin-left: 30px;"></div>',
     '        <!-- 性别 -->',
-    '        <div class="hoverPointer" style="width:640px;height:100px;background-color: #ffffff;display: flex;">',
+    '        <div class="hoverPointer" onclick="SlagoModel.UserPersonal.UserData.sexSetingPage.show()" style="width:640px;height:100px;background-color: #ffffff;display: flex;">',
     '            <!-- 字体提示栏 -->',
     '            <div style="width:150px;height:100px;background-color: rgb(255, 255, 255);',
     '            display: flex;align-items: center;font-size: 25px;margin-left: 30px;">',
