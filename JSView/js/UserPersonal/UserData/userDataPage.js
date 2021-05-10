@@ -144,13 +144,13 @@
         //点击表单
         input.click();
     };
-    namespace.getModel=function(){
-        return Slagolib.template.engin(this.Page,{});
-    };
-    namespace.show=function(){
+    namespace.getModel = function () {
+        return Slagolib.template.engin(this.Page, {});
+    }
+    namespace.show = function () {
         //创建页面,推入页面栈
-        Slago.CreatePage(this.getModel());
-    };
+        Slago.CreatePage(namespace.getModel());
+    }
     //加入模块
     SlagoModel.UserPersonal.UserData.userDataPage=namespace;
 })();
