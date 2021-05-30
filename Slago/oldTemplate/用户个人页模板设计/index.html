@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            border: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 用户个人页面 -->
+    <div style="width:640px;background-color: rgb(255, 255, 255);">
+        <!-- 用户信息块\昵称\关注\粉丝\头像等元素 -->
+        <div style="width:620px;
+                    height:200px;margin-left: 10px;
+                    display: flex;flex-wrap: wrap;justify-content: space-around;
+                    align-items: center;margin-top: 30px;
+                    border-radius: 20px;
+                    -webkit-box-shadow: rgb(185, 185, 185) 0px 0px 10px; 
+                    -moz-box-shadow: rgb(192, 192, 192) 0px 0px 10px; 
+                    box-shadow: rgb(199, 199, 199) 0px 0px 10px;">
+            <!-- 头像 -->
+            <div style="width:140px;height:140px;
+                        background-color:rgb(255, 255, 255);
+                        border-radius:80px;">
+                <img src="https://weiliicimg9.pstatp.com/weili/l/907007723288002647.webp"
+                    style="width:100%;height:100%;border-radius:50%;">
+            </div>
+            <!-- 个人成就 -->
+            <div style="width:440px;height:140px;">
+                <!-- 用户名 -->
+                <div style="width:100%;
+                            height:70px;
+                            background-color:rgb(255, 255, 255);
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            font-size: 27px;
+                            color:#707070">
+                    <p>高万禄</p>
+                </div>
+                <!-- 成就栏 -->
+                <div style="width:100%;
+                            height:70px;
+                            background-color:rgb(255, 255, 255);
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            font-size: 24px;
+                            color:#707070">
+                    <p>12 关注 3k 粉丝 5w 喜欢</p>
+                </div>
+            </div>
+        </div>
+        <!-- 内容导航栏 -->
+        <div style="width:620px;
+                    margin-top: 7px;
+                    margin-left:10px;
+                    height:68px;">
+            <!-- 字体栏 -->
+            <div style="width:100%;height:50px">
+                <!-- Post -->
+                <div style="width:150px;
+                            height:100%;
+                            background-color: rgb(255, 255, 255);
+                            display: flex;
+                            justify-content:center;
+                            align-items:center;
+                            font-size:26px;
+                            color:#707070;
+                            font-weight:bold;">
+                    <p>Post</p>
+                </div>
+            </div>
+            <!-- 颜色条 -->
+            <div style="width:100%;height:10px;">
+                <!-- Post颜色条 -->
+                <div style="width:100px;
+                            height:100%;
+                            background-image: linear-gradient(to right, rgb(255, 92, 92) , rgb(255, 255, 255));
+                            border-radius:5px;
+                            margin-left:25px;">
+                </div>
+            </div>
+        </div>
+        <!-- 帖子栏 -->
+        <div style="width:620px;
+                    margin-left:10px;
+                    margin-top:10px;
+                    min-height: 800px;">
+            <!-- 媒体块，每个块存储两个帖子 -->
+            <div style="width:100%;
+                        background-color:rgb(255, 255, 255);
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;">
+                <div style="width:49%;">
+                    <img src="https://api.paugram.com/wallpaper/?source=sina&category=us" style="width:100%;
+                                       border-radius:20px;
+                                       flex-shrink:0;
+                                       margin: 0px;
+                                       -webkit-box-shadow: rgb(185, 185, 185) 0px 0px 10px; 
+                                       -moz-box-shadow: rgb(192, 192, 192) 0px 0px 10px; 
+                                       box-shadow: rgb(199, 199, 199) 0px 0px 10px;">
+                </div>
+                <div style="width:49%;">
+                    <img src="https://api.paugram.com/wallpaper/?source=sina&category=us" style="width:100%;
+                                       border-radius:20px;
+                                       flex-shrink:0;
+                                       margin: 0px;
+                                       -webkit-box-shadow: rgb(185, 185, 185) 0px 0px 10px; 
+                                       -moz-box-shadow: rgb(192, 192, 192) 0px 0px 10px; 
+                                       box-shadow: rgb(199, 199, 199) 0px 0px 10px;">
+                </div>
+            </div>
+        </div>
+        <!-- Web-Footer -->
+        <div style="width:100%;
+                    height:100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#707070;
+                    margin-top:100px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    margin-bottom:100px;
+                    font-size:bold;">
+            <p>© 2021 IMageShare, Inc. v0.0.1 . Design by Slago.js .</p>
+        </div>
+    </div>
+
+</body>
+</html>

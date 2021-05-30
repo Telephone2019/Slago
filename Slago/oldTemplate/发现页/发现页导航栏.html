@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640,user-scalable=no">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(255, 155, 155);">
+    <!--页面容器-->
+    <div style="width:640px;height:1500px;background-color:#dfdfdf;">
+        <!--页面Header-->
+        <div style="width:640px;height:150px;background-color:#ffffff;position:fixed;">
+            <!-- 标题与搜索栏 -->
+            <div style="width:640px;height:50%;display: flex;flex-wrap: wrap;">
+                <div style="width:140px;background-color:rgb(255, 255, 255);height:100%;
+                            font-size:45px;font-weight:bold;display:flex;justify-content: center;
+                            align-items: center;color:#11121b;">发现</div>
+                <!-- 搜索栏 -->
+                <div style="width:500px;height:100%;background-color: rgb(255, 255, 255);display: flex;align-items: center;flex-wrap: wrap;">
+                    <input type="text" style="width:350px;height:50px;margin-left: 50px;outline:none;text-align: center;
+                    border-radius: 25px;background-color: rgb(193, 227, 255);font-size: 27px;">
+                    <img src="./img/搜索.png" style="height:50px;border-top-right-radius: 25px;border-bottom-right-radius:25px ;margin-left: 10px;">
+                </div>
+            </div>
+            <!-- 页面内选择栏 -->
+            <div style="width:640px;height:50%;background-color: rgb(255, 255, 255);">
+                <!-- 字体栏 -->
+                <div style="width:640px;height:80%;background-color: #ffffff;">
+                    <div style="font-size: 25px;height:100%;color:#0066cc;display: flex;align-items: center;
+                    margin-left: 23px;">精选</div>
+                </div>
+                <!-- 滑动条栏 -->
+                <div style="width:640px;height:10px;background-color: #ffffff;">
+                    <div style="width:50px;height:10px;background-color: #0066cc;
+                    border-radius:5px;margin-left: 24px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
